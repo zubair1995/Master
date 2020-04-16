@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+          xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+          xmlns:local="clr-namespace:CancerPortal.View"
+          xmlns:resx="clr-namespace:CancerPortal.Resources;assembly=Master"
+    
+          x:Class="CancerPortal.View.AboutPage" 
+          Title="AboutLabel" 
+          BackgroundColor="{StaticResource ContentPageBackground}">
+    <StackLayout Spacing="20" Padding="15" Orientation="Horizontal">
+        <Label Text="Number" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+        <Label Text="2" Style="{StaticResource LabelDescriptions}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End"/>
+    </StackLayout>
+</ContentPage>

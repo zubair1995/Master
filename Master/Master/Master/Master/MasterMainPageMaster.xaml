@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="using:CancerPortal.View"
+			  x:Class="CancerPortal.View.MasterMainPageMaster"
+			 Title="Personal Organiser">
+    <StackLayout>
+        <ListView x:Name="listView" x:FieldModifier="public" SeparatorColor="Red"   RowHeight="60" >
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type local:MasterMainPageMasterMenuItem}">
+                    <local:MasterMainPageMasterMenuItem Title="HomeLabel"  IconSource="Home.png"  TargetType="{x:Type local:ContactsPage}" />
+                    <local:MasterMainPageMasterMenuItem Title="AboutLabel"   IconSource="About.png" TargetType="{x:Type local:AboutPage}" />
+                    <local:MasterMainPageMasterMenuItem  Title="SettingsLabel" IconSource="Settings.png"  TargetType="{x:Type local:ReminderPage}" />
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.Header>
+                <StackLayout HeightRequest="200">
+                    <AbsoluteLayout BackgroundColor="{StaticResource PrimaryDark}" Padding="0,0,0,0">
+                        <Image AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" Source="carousel1.png" HorizontalOptions="FillAndExpand" Aspect="AspectFill"/>
+                        <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" BackgroundColor="Transparent" Padding="10,10,10,10" AbsoluteLayout.LayoutBounds="0,1,1,190" AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional">
+                            <StackLayout Orientation="Vertical">
+                                <Image x:Name="MasterBackButton"  x:FieldModifier="public" Source="backIcon.png" WidthRequest="26" HeightRequest="20" Margin="0,0,0,92" HorizontalOptions="StartAndExpand"/>
+                                <!--<Label FontSize="28" Margin="0,20,0,92" Text="{x:Static common:fontawesomeIcons.FAArrowLeft}" x:Name="MasterBackButton" Style="{StaticResource fontawesomeIconLabel}" TextColor="{StaticResource Transparent}"/>-->
+                                <Label x:Name="AppName" Text="KB Portalen" Style="{StaticResource DrawerHeadingLabel}" HorizontalOptions="StartAndExpand"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </AbsoluteLayout>
+                </StackLayout>
+            </ListView.Header>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="20,10,0,10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding IconSource}"   WidthRequest="30" HeightRequest="30"  VerticalOptions="Center" />
+                            <Label Grid.Column="1" Text="{Binding Title}"    FontSize="14"  VerticalOptions="Center" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

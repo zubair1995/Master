@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Master.App">
+    <Application.Resources>
+        <ResourceDictionary>
+     
+      
+            <Color x:Key="Primary">#EB040D</Color>
+            <Color x:Key="PrimaryDark">#EB040D</Color>
+            <Color x:Key="FabColor">#FFF62F5E</Color>
+            <Color x:Key="Accent">#ff6b43</Color>
+            <Color x:Key="WhiteColor">#ffffff</Color>
+            <Color x:Key="AltoColor">#d5d5d5</Color>
+            <Color x:Key="LightBackgroundColor">#FFCCCCCC</Color>
+            <Color x:Key="FieldLineColor">#FF4C7485</Color>
+            <Color x:Key="BlackSqueeze">#FFEFF6F9</Color>
+            <Color x:Key="DarkBackgroundColor">#FF222222</Color>
+            <Color x:Key="SuccessGreen">#04a704</Color>
+            <Color x:Key="MediumGrayTextColor">#222222</Color>
+            <Color x:Key="LightTextColor">#FF222222</Color>
+            <Color x:Key="EntryTextPlaceHolderColor">#FF808080</Color>
+            <Color x:Key="FieldBackgroundColor">#FFF8F9FA</Color>
+            <Color x:Key="Transparent">#FFFFFFFF</Color>
+            <Color x:Key="ContentPageBackground">#ffffff</Color>
+            <Color x:Key="IconButtonColor">#FF344651</Color>
+            <Color x:Key="ErrorColor">#FFD50000</Color>
+            <Color x:Key="BlackColor">#000000</Color>
+            <Color x:Key="LoginButtonDisabeColor">#CFEDFA</Color>
+            <Color x:Key="SecondaryColor">#004c89</Color>
+            <Color x:Key="RedRibbon">#DD003D</Color>
+            <Color x:Key="SilverChalice">#FF809FAA</Color>
+            <Color x:Key="GreenHaze">#009963</Color>
+            <Color x:Key="DraftStatusColor">#e2f0fd</Color>
+            <Color x:Key="PendingStatusColor">#ffcb03</Color>
+            <Color x:Key="ReleasedStatusColor">#ffcb03</Color>
+            <Color x:Key="WildSandColor">#FFEFF6F9</Color>
+            <Color x:Key="LabelTextColor">#FFFF582B</Color>
+            <Color x:Key="PlaceHolderTextColor">#FF808080</Color>
+            <Color x:Key="EntryFocusConvertColor">#FFFF582B</Color>
+            <Color x:Key="EntryUnFocusConvertColor">#61222222</Color>
+            <Color x:Key="ListviewDescriptionLabelColor">#61222222</Color>
+            <Color x:Key="RejectedStatusColor">#e03905</Color>
+            <Color x:Key="ApprovedStatusColor">#04c727</Color>
+            <Color x:Key="TreatedStatusColor">#04c727</Color>
+            <Color x:Key="SyncStatusColor">#e03905</Color>
+            <Color x:Key="DisableButtonColor">#FFDDDDDD</Color>
+            <Color x:Key="DisableLoginButtonColor">#cfedfa</Color>
+            <Color x:Key="ValidationErrorColor">#FFD50000</Color>
+            <Color x:Key="SwitchDisableColor">#FFD6D6D8</Color>
+            <Color x:Key="SecandoryBlueColor">#FF2B5F77</Color>
+            <Color x:Key="ButtonBackgroundColor">#00A0E2</Color>
+            <Color x:Key="BorderColor">#EB040D</Color>
+            <OnPlatform x:Key="LightFontFamily" x:TypeArguments="x:String" iOS="Roboto-Light.ttf" Android="Roboto-Light.ttf#Roboto-Light"/>
+            <OnPlatform x:Key="RegularFontFamily" x:TypeArguments="x:String" iOS="Roboto-Regular.ttf" Android="Roboto-Regular.ttf#Roboto-Regular"/>
+            <OnPlatform x:Key="SemiBoldFontFamily" x:TypeArguments="x:String" iOS="Roboto-Medium.ttf" Android="Roboto-Medium.ttf#Roboto-Medium"/>
+            <OnPlatform x:Key="MediumFontFamily" x:TypeArguments="x:String" iOS="Roboto-Bold.ttf" Android="Roboto-Bold.ttf#Roboto-Bold"/>
+            <OnPlatform x:Key="fontawesomeFontFamily" x:TypeArguments="x:String" iOS="fontawesome" Android="fontawesome.ttf#fontawesome"/>
+            <x:Double x:Key="LabelCrossFontSize">18</x:Double>
+            <x:Double x:Key="TitleFontSize">18</x:Double>
+            <x:Double x:Key="LoginLabelsFontSize">14</x:Double>
+            <x:Double x:Key="BodyFontSize">14</x:Double>
+            <x:Double x:Key="TagTextFontSize">14</x:Double>
+            <x:Double x:Key="ModuleListViewHeadingFontSize">14</x:Double>
+            <x:Double x:Key="ListViewHeadingFontSize">16</x:Double>
+            <x:Double x:Key="ListViewDescriptionFontSize">14</x:Double>
+            <x:Double x:Key="ModuleListViewDescriptionFontSize">13</x:Double>
+            <x:Double x:Key="ButtonFontSize">14</x:Double>
+            <x:Double x:Key="DrawerMenuFontSize">15</x:Double>
+            <x:Double x:Key="LabelHeadingFontSize">14</x:Double>
+            <x:Double x:Key="EntryLabelHeadingFontSize">12</x:Double>
+            <x:Double x:Key="LabelDescriptionFontSize">14</x:Double>
+            <x:Double x:Key="ErrorLabelDescriptionFontSize">12</x:Double>
+            <x:Double x:Key="EntryTextFontSize">16</x:Double>
+            <x:Double x:Key="InfoFontSize">13</x:Double>
+            <x:Double x:Key="IconButtonFontSize">20</x:Double>
+            <x:Double x:Key="LargeLabelFontSize">14</x:Double>
+            <x:Double x:Key="SettingsHeadingLabelFontSize">12</x:Double>
+            <x:Double x:Key="SettingsInnerLabelFontSize">16</x:Double>
+            <x:Double x:Key="IconBottomBarButtonFontSize">24</x:Double>
+            <x:Double x:Key="SelectCompanyLabelSize">25</x:Double>
+            <Style x:Key="MainBodyStack" TargetType="StackLayout">
+                <Setter Property="Padding" Value="30,24,30,24" />
+                <Setter Property="Spacing" Value="16"/>
+            </Style>
+            <Style x:Key="BlueLabelHeadings" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource FieldLineColor}" />
+                <Setter Property="FontFamily" Value="{StaticResource SemiBoldFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource LabelHeadingFontSize}" />
+            </Style>
+            <Style x:Key="PopUpHeadingLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource DarkBackgroundColor}" />
+                <Setter Property="FontFamily" Value="{StaticResource SemiBoldFontFamily}" />
+                <Setter Property="FontSize" Value="20" />
+            </Style>
+            <Style x:Key="EntryLabelHeadings" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource EntryUnFocusConvertColor}" />
+                <Setter Property="FontFamily" Value="{StaticResource RegularFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource EntryLabelHeadingFontSize}" />
+                <Setter Property="Margin" Value="13,10,10,0" />
+            </Style>
+            <Style x:Key="SpacerBlueLine" TargetType="BoxView">
+                <Setter Property="BackgroundColor" Value="{StaticResource SecandoryBlueColor}"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="HeightRequest" Value="1"/>
+            </Style>
+            <Style x:Key="BottomMenuStickSwipeButton" TargetType="StackLayout">
+                <Setter Property="BackgroundColor" Value="{StaticResource FieldBackgroundColor}"/>
+                <Setter Property="Padding" Value="0,15,0,15"></Setter>
+            </Style>
+            <Style x:Key="loadMoreButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource Transparent}" />
+                <Setter Property="TextColor" Value="{StaticResource Primary}" />
+                <Setter Property="FontFamily" Value="{StaticResource fontawesomeFontFamily}" />
+                <Setter Property="HeightRequest" Value="50" />
+                <Setter Property="FontSize" Value="30" />
+            </Style>
+            <Style x:Key="IconBottomBarButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource FabColor}" />
+                <Setter Property="TextColor" Value="{StaticResource Transparent}" />
+                <Setter Property="FontSize" Value="{StaticResource IconBottomBarButtonFontSize}"/>
+                <Setter Property="FontFamily" Value="{StaticResource fontawesomeFontFamily}" />
+                <Setter Property="HeightRequest" Value="40"/>
+            </Style>
+            <Style x:Key="loginButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource FabColor}" />
+                <Setter Property="TextColor" Value="{StaticResource Transparent}" />
+                <Setter Property="HeightRequest" Value="43" />
+                <Setter Property="WidthRequest" Value="200" />
+                <Setter Property="FontFamily" Value="{StaticResource RegularFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource ButtonFontSize}" />
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="0,28,0,0"/>
+                <Style.Triggers>
+                    <Trigger  TargetType="Button"
+                   Property="IsEnabled" 
+                   Value="False">
+                        <Setter Property="BackgroundColor" 
+                   Value="{StaticResource DisableButtonColor}" />
+                        <Setter Property="TextColor" 
+                   Value="{StaticResource Transparent}" />
+                    </Trigger>
+                    <Trigger  TargetType="Button"
+                   Property="IsEnabled" 
+                   Value="True">
+                        <Setter Property="BackgroundColor" 
+                   Value="{StaticResource FabColor}" />
+                        <Setter Property="TextColor" 
+                   Value="{StaticResource Transparent}" />
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            <Style x:Key="MaterialEntryLabelHeadings" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource EntryUnFocusConvertColor}" />
+                <Setter Property="FontFamily" Value="{StaticResource RegularFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource EntryLabelHeadingFontSize}" />
+                <Setter Property="Margin" Value="12,8,12,0" />
+                <Setter Property="VerticalOptions" Value="End"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+            </Style>
+            <Style x:Key="LabelHeadings" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource DarkBackgroundColor}" />
+                <Setter Property="FontFamily" Value="{StaticResource RegularFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource LabelHeadingFontSize}" />
+            </Style>
+            <Style x:Key="LabelDescriptions" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource DarkBackgroundColor}" />
+                <Setter Property="FontFamily" Value="{StaticResource LightFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource LabelDescriptionFontSize}" />
+            </Style>
+            <Style x:Key="SwipeButtonLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource Transparent}" />
+                <Setter Property="FontFamily" Value="{StaticResource RegularFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource EntryTextFontSize}" />
+            </Style>
+            <Style x:Key="MaterialEntryBorderInActive" TargetType="BoxView">
+                <Setter Property="BackgroundColor" Value="{StaticResource FieldLineColor}"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="WidthRequest" Value="0"/>
+                <Setter Property="Margin" Value="0"/>
+                <Setter Property="HeightRequest" Value="1"/>
+            </Style>
+            <Style x:Key="MaterialEntryBorderActive" TargetType="BoxView">
+                <Setter Property="BackgroundColor" Value="{StaticResource FieldLineColor}"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="Margin" Value="0"/>
+                <Setter Property="HeightRequest" Value="1"/>
+            </Style>
+            <Style x:Key="IconButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource FieldBackgroundColor}" />
+                <Setter Property="TextColor" Value="{StaticResource IconButtonColor}" />
+                <Setter Property="FontSize" Value="{StaticResource IconButtonFontSize}"/>
+                <Setter Property="FontFamily" Value="{StaticResource fontawesomeFontFamily}" />
+            </Style>
+            <Style x:Key="fontawesomeIconLabelListview" TargetType="Label">
+                <Setter Property="FontFamily" Value="{StaticResource fontawesomeFontFamily}" />
+                <Setter Property="FontSize" Value="15" />
+                <Setter Property="YAlign" Value="Center"/>
+            </Style>
+            <Style x:Key="fontawesomeIconLabel" TargetType="Label">
+                <Setter Property="FontFamily" Value="{StaticResource fontawesomeFontFamily}" />
+            </Style>
+            <Style x:Key="ValidationErrorLabelStyle" TargetType="{x:Type Label}">
+                <Setter Property="TextColor" Value="{StaticResource ValidationErrorColor}" />
+                <Setter Property="FontSize" Value="{StaticResource ErrorLabelDescriptionFontSize}" />
+                <Setter Property="FontFamily" Value="{StaticResource RegularFontFamily}" />
+                <Setter Property="HorizontalOptions" Value="StartAndExpand" />
+            </Style>
+            <Style x:Key="ExpenseAmountLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource Transparent}" />
+                <Setter Property="FontFamily" Value="{StaticResource SemiBoldFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource ListViewHeadingFontSize}" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+            <Style x:Key="DrawerHeadingLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource Transparent}" />
+                <Setter Property="FontFamily" Value="{StaticResource SemiBoldFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource TitleFontSize}" />
+            </Style>
+            <Style x:Key="ListViewHeadingLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource DarkBackgroundColor}" />
+                <Setter Property="FontFamily" Value="{StaticResource RegularFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource ListViewHeadingFontSize}" />
+                <Setter Property="YAlign" Value="Start" />
+                <Setter Property="LineBreakMode" Value="TailTruncation" />
+            </Style>
+            <Style x:Key="ListViewHeadingDescriptionLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource ListviewDescriptionLabelColor}" />
+                <Setter Property="FontFamily" Value="{StaticResource RegularFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource ListViewDescriptionFontSize}" />
+                <Setter Property="YAlign" Value="Center" />
+                <Setter Property="LineBreakMode" Value="NoWrap" />
+            </Style>
+            <Style x:Key="ModuleListViewHeadingLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource DarkBackgroundColor}" />
+                <!--<Setter Property="HorizontalTextAlignment" Value="Center" />-->
+                <Setter Property="FontFamily" Value="{StaticResource RegularFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource ModuleListViewHeadingFontSize}" />
+            </Style>
+            <Style x:Key="GrayLine" TargetType="BoxView">
+                <Setter Property="BackgroundColor" Value="{StaticResource LightBackgroundColor}" />
+                <Setter Property="WidthRequest" Value="1" />
+                <Setter Property="Margin" Value="0" />
+            </Style>
+            <Style x:Key="GrayLineHorizontal" TargetType="BoxView">
+                <Setter Property="BackgroundColor" Value="{StaticResource FieldLineColor}" />
+            </Style>
+            <Style x:Key="GrayLineBg" TargetType="StackLayout">
+                <Setter Property="BackgroundColor" Value="{StaticResource LightBackgroundColor}" />
+            </Style>
+            <Style x:Key="MaterialValidationIcon" TargetType="Image">
+                <Setter Property="Source" Value="warningIcon.png" />
+                <Setter Property="HorizontalOptions" Value="End" />
+                <Setter Property="HeightRequest" Value="15" />
+            </Style>
+            <Style x:Key="DatePickerDetailInput" TargetType="DatePicker">
+                <Setter Property="TextColor" Value="{StaticResource DarkBackgroundColor}" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="BackgroundColor" Value="{StaticResource FieldBackgroundColor}" />
+                <Setter Property="Format" Value="dd-MM-yyyy"/>
+                <Setter Property="VerticalOptions" Value="Start" />
+                <Style.Triggers>
+                    <Trigger TargetType="DatePicker" Property="IsEnabled" Value="False">
+                        <Setter Property="TextColor" Value="{StaticResource EntryUnFocusConvertColor}" />
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            <Style x:Key="PickerDetailInput" TargetType="Picker">
+                <Setter Property="TextColor" Value="{StaticResource DarkBackgroundColor}" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="BackgroundColor" Value="{StaticResource FieldBackgroundColor}" />
+            </Style>
+            <Style x:Key="EditorStyle" TargetType="Editor">
+                <Setter Property="FontFamily"
+                        Value="{StaticResource RegularFontFamily}" />
+                <Setter Property="TextColor"
+                        Value="{StaticResource DarkBackgroundColor}" />
+                <Setter Property="FontSize"
+                        Value="{StaticResource EntryTextFontSize}" />
+                <Setter Property="HorizontalOptions"
+                        Value="FillAndExpand" />
+                <Setter Property="VerticalOptions"
+                        Value="Start" />
+                <Setter Property="BackgroundColor" 
+                        Value="{StaticResource FieldBackgroundColor}" />
+                <Setter Property="HeightRequest"
+                        Value="200"/>
+                <Style.Triggers>
+                    <Trigger TargetType="Editor" Property="IsEnabled" Value="False">
+                        <Setter Property="TextColor" Value="{StaticResource EntryUnFocusConvertColor}" />
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+
+
+            <Style x:Key="EntryStyle" TargetType="Entry">
+                <Setter Property="FontFamily"
+                        Value="{StaticResource RegularFontFamily}" />
+                <Setter Property="TextColor"
+                        Value="{StaticResource DarkBackgroundColor}" />
+                <Setter Property="PlaceholderColor"
+                        Value="{StaticResource EntryTextPlaceHolderColor}" />
+                <Setter Property="FontSize"
+                        Value="{StaticResource EntryTextFontSize}" />
+                <Setter Property="HorizontalOptions"
+                        Value="FillAndExpand" />
+                <Setter Property="VerticalOptions"
+                        Value="Start" />
+                <Setter Property="BackgroundColor" 
+                        Value="{StaticResource FieldBackgroundColor}" />
+                <Style.Triggers>
+                    <Trigger TargetType="Entry" Property="IsEnabled" Value="False">
+                        <Setter Property="TextColor" Value="{StaticResource EntryUnFocusConvertColor}" />
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
